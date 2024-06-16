@@ -1,0 +1,231 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* background-color: #44403c; */
+}
+body {
+  font-family: Sono, sans-serif;
+  color: #fafaf9;
+  background-color: #292524;
+  padding: 48px 64px;
+  font-weight: 600;
+}
+
+.header {
+  margin-bottom: 40px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+h1 {
+  color: #fafaf9;
+  font-size: 42px;
+  text-transform: uppercase;
+  /* text-align: center; */
+  font-family: "Coiny", sans-serif;
+  /* color: #932b8a; */
+  line-height: 1;
+  margin-top: 6px;
+}
+
+.category {
+  margin-bottom: 16px;
+}
+
+.fact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  list-style: 1.4;
+  /* color: #fafaf9; */
+  background-color: #44403c;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  letter-spacing: -1px;
+  border-radius: 16px;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+
+.fact-form {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  background-color: #44403c;
+  padding: 16px 40px;
+  border-radius: 16px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.tag {
+  color: #fafaf9;
+  font-family: Coiny, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+}
+
+.vote-buttons {
+  margin-left: auto;
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.vote-buttons button:hover {
+  background-color: #292524;
+}
+
+.vote-buttons button {
+  background-color: #78716e;
+  border: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.source:link,
+.source:visited {
+  color: #a8a29e;
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+.source:hover,
+.source:active {
+  color: #3b82f6;
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+  transition: 0.3s;
+}
+.btn {
+  font-family: Coiny, sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 16px 0px 13px;
+  background-image: linear-gradient(
+    to left bottom,
+    #3b82f6,
+    #ef4444,
+    #16a34a,
+    #eab308
+  );
+  border: none;
+  color: inherit;
+  /* buttons do not inherit color */
+  /* top: 16px left-right: 0px bottom: 13px */
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+
+.btn-all-category {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+
+.fact-form input,
+.fact-form select {
+  width: 220px;
+  background-color: #78716c;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+}
+
+.fact-form input::placeholder {
+  color: #a8a29e;
+}
+
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+}
